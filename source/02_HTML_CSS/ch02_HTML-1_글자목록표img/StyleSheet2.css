@@ -1,0 +1,23 @@
+﻿/*ex.css(3_표태그2.html의 디자인*/
+table {
+    background-color: aqua;
+    text-align: center;
+   
+}
+
+tr {
+    background-color: #fff;
+    padding: 3px 10px;
+}
+
+    tr:hover {
+        background-color: lightgreen;
+    }
+
+caption {
+    background-color: lightyellow;
+}
+
+colspan {
+    font-weight: bold
+}
