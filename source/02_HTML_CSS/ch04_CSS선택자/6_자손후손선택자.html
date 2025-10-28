@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div#wrap{
+            width:600px;
+            margin: 0 auto;
+        }
+        /*.logo와 title 수평으로*/
+        #wrap > #header{/*자손선택자*/
+            overflow:hidden;
+        }
+        #wrap .logo{
+            float:left;
+            padding:10px 30px 10px 150px
+        }
+        #wrap .title {
+            float: left;
+            padding: 20px 150px 10px 30px
+        }
+        div p{/*후손선택자 div밑의 p(자손,후손포함)*/
+            font-size:1.5em;
+        }
+        div>p{/*자손선택자div바로밑의p(자손만)*/
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="logo">
+                <h1>LOGO</h1>
+            </div>
+            <div class="title">
+                <h2>oo 주식회사</h2>
+            </div>
+        </div>
+        <div id="content">
+            <p>
+                낀잘말늑리아만 구시가드라, 거싸가옥립는 다조도 자쇨뮤앞는 인니이작잤읍시다 바꼿도 젱돌을 픽앙이로 모러후에디로. 커삿 뱒읐즈그고 겍암 힡여죤 헤슨비저로, 너링애나맜나산다 이쳠을 빠끙석질 어헤샀니. 으이 솨젝쫴그만 어슣재지펠궝 를개밸저는 자민의 아젬션아도 궀한는, 니노남됴는 헬윽톨 즌사자다. 므벌걋아 일랑기 모나의, 닷스테 네나지 시니토아 르. 꼉린이나 뗴슽을 지어설올다 후학부오밤늡모기 의기저, 뵨하는 히엔저가 듁베가 사고킨세다.
+            </p>
+            <ul>
+                <li>
+                    <p>
+                        낀잘말늑리아만 구시가드라
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        낀잘말늑리아만 구시가드라
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div id="footer">
+            <p>서울시 관악구 신림동</p>
+        </div>
+    </div>
+</body>
+</html>

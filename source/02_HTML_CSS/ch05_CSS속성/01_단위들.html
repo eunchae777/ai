@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #wrap{
+            width:600px;
+            margin: 0 auto;
+            border: 1px solid gray;
+            padding:10px;
+            text-align:justify;
+        }
+        #wrap p:nth-child(2n){
+            background-color:lightcyan;
+            /*css 단위 : px, em, %, pt*/
+
+        }
+        #wrap p:nth-child(1){
+            font-size:.8em;/*원래 사이즈의 0.8배(pxtoem)*/
+        }
+        #wrap p:nth-child(2) {
+            font-size: 100%; /*원래 사이즈(16px)의 100% 
+                width,hejght,padding,maegin,..등의:부몽의 몇%*/
+        }
+        #wrap p:nth-child(3) {
+            font-size: 32px; 
+        }
+        #wrap p:nth-child(4) {
+            font-size: 24pt; /*3pt가 4px (pttopx)*/
+        }
+        #wrap p > span{
+            font-size: .5em;
+            display:block;
+            color:gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum
+            <span>입력 2025.10.28 오후 5:22</span>
+        </p>
+        <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum
+            <span>입력 2025.10.28 오후 5:22</span>
+        </p>
+        <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum
+            <span>입력 2025.10.28 오후 5:22</span>
+        </p>
+        <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum
+            <span>입력 2025.10.28 오후 5:22</span>
+        </p>
+    </div>
+</body>
+</html>

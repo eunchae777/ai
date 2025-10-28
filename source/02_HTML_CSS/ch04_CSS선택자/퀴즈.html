@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        /*전체적인 레이아웃 잡기*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration:none;
+            color:#000;
+        }
+        /*border 뒹글리기*/
+        #header{
+            width:1000px;
+            height:150px;
+            overflow:hidden;
+        }
+        #header .left{
+            width:150px;
+            height:150px;
+            border-radius:20px 0 20px 0;
+            border: 1px solid #000;
+            background-color:lightgray;
+            float:left;
+        }
+        #header .right {
+            width: 150px;
+            height: 150px;
+            border-radius: 0 20px 0 20px;
+            border: 1px solid #000;
+            background-color: lightgray;
+            float: left;
+        }
+        #header .center {
+            width: 693px;
+            height: 150px;
+            border-radius: 0  0 20px 20px;
+            border: 1px solid #000;
+            background-color: lightgray;
+            float: left;
+        }
+        #content {
+            width: 1000px;
+            height: 300px;
+            overflow: hidden;
+        }
+        #content .left {
+            width: 150px;
+            height: 300px;
+            border-radius: 0 20px 20px 0;
+            border: 1px solid #000;
+            background-color: lightgray;
+            float: left;
+        }
+        #content .right {
+            width: 150px;
+            height: 300px;
+            border-radius: 20px 0 0 20px;
+            border: 1px solid #000;
+            background-color: lightgray;
+            float: left;
+        }
+        #content .center {
+            width: 693px;
+            height: 300px;
+            border-radius: 20px ;
+            border: 1px solid #000;
+            background-color: lightgray;
+            float: left;
+        }
+        #footer {
+            width: 1000px;
+            height: 150px;
+            overflow: hidden;
+        }
+
+        #footer .left {
+            width: 150px;
+            height: 150px;
+            border-radius:0 20px 0 20px ;
+            border: 1px solid #000;
+            background-color: lightgray;
+            float: left;
+        }
+
+        #footer .right {
+            width: 150px;
+            height: 150px;
+            border-radius: 20px 0 20px 0;
+            border: 1px solid #000;
+            background-color: lightgray;
+            float: left;
+        }
+
+        #footer .center {
+            width: 693px;
+            height: 150px;
+            border-radius: 20px 20px 0 0;
+            border: 1px solid #000;
+            background-color: lightgray;
+            float: left;
+        }
+        /*#content center*/
+
+        #content #nav {
+            overflow: hidden;
+            
+            
+        }
+        #content #nav li {
+            float: left;
+            list-style: none;
+            width:230px;
+            height:100px;
+            text-align:center;
+            padding-top:10px
+               
+        }
+        #content #nav li a{
+            font-size:2em;
+            font-weight:bold;
+        }
+        #content #academy h2 {
+            text-align: center;
+            font-size: 2em;
+            height:100px;
+        }
+        #content #academy p{
+            margin:15px
+        }
+        /*#content right*/
+        #content .right ol {
+            margin:10px 10px 10px 40px;
+            text-align:left;
+        }
+        #content .right ol li:nth-child(10),
+        #content .right ol li:nth-child(11),
+        #content .right ol li:nth-child(12){
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div id="content">
+        <div class="left"></div>
+        <div class="center">
+            <div id="nav">
+                <ul>
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                </ul>
+            </div>
+            <div id="academy">
+                <h2>AI 개발자 양성과정</h2>
+                <p>
+                    파이썬, 웹표준, js, 웹크롤링, DBMS(Orcale, MySQL), 딥러닝,
+                    이미지 딥러닝, 자연어처리, 생성형 ai, 머신러닝, 프로젝트, flask,장고
+                </p>
+            </div>
+            
+        </div>
+        <div class="right">
+            <ol>
+                <li>태그</li>
+                <li>전체(*)</li>
+                <li>#id, .class</li>
+                <li>속성</li>
+                <li>후손,자손</li>
+                <li>동위+~</li>
+                <li>반응</li>
+                <li>상태</li>
+                <li>구조</li>
+                <li>문자</li>
+                <li>링크</li>
+                <li>부정</li>
+            </ol>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
