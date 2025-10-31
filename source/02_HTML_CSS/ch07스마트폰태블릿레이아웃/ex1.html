@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=0.7, maximum-scale=2.0" />
     <title></title>
-    <style>
-        header, footer{
-            background-color: #ea8f00;
-        }
-    </style>
+    <link rel="stylesheet" href="/ex.css">
 </head>
 <body>
     <input type="checkbox" id="toggle">
@@ -20,10 +16,104 @@
             <a href="#" class="logo">mobile logo</a>
             <img src="ch07/myinfo.png" class="myinfo">
         </div>
-        <div id="search"></div>
+        <div id="search">
+            <form>
+                <input type="text" name="query_word" id>
+                <input type="submit"  value="">
+            </form>
+        </div>
     </header>
-    <div id="lnb"></div>
-    <section></section>
-    <footer></footer>
+    <div id="lnb">
+        <ul>
+            <li><a href="#1">lnb1</a></li>
+            <li><a href="#2">lnb2</a></li>
+            <li><a href="#3">lnb3</a></li>
+            <li><a href="#4">lnb4</a></li>
+            <li><a href="#5">lnb5</a></li>
+            <li><a href="#6">lnb6</a></li>
+        </ul>
+    </div>
+    <section>
+        <div id="section1">
+            <div class="row1">
+                <div>
+                    <a href="https://n.news.naver.com/mnews/article/022/0004079152?sid=101">
+                        <img src="https://imgnews.pstatic.net/image/022/2025/10/31/20251031503340_20251031092206835.jpg?type=w860" alt="1행1열기사">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://it.donga.com/107789/">
+                        <img src="https://it.donga.com/media/__sized__/images/2025/10/31/7f30173e2bef4148-thumbnail-1920x1080-70.jpg" alt="1행1열기사">
+                    </a>
+                </div>
+            </div>
+            <div class="row2">
+                <div>
+                    <a href="https://it.donga.com/107789/">
+                        <img src="https://it.donga.com/media/__sized__/images/2025/10/31/7f30173e2bef4148-thumbnail-1920x1080-70.jpg" alt="1행1열기사">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://n.news.naver.com/mnews/article/022/0004079152?sid=101">
+                        <img src="https://imgnews.pstatic.net/image/022/2025/10/31/20251031503340_20251031092206835.jpg?type=w860" alt="1행1열기사">
+                    </a>
+                </div>
+            </div>
+            <div class="row3">
+                <div>
+                    <a href="https://n.news.naver.com/mnews/article/022/0004079152?sid=101">
+                        <img src="https://imgnews.pstatic.net/image/022/2025/10/31/20251031503340_20251031092206835.jpg?type=w860" alt="1행1열기사">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://it.donga.com/107789/">
+                        <img src="https://it.donga.com/media/__sized__/images/2025/10/31/7f30173e2bef4148-thumbnail-1920x1080-70.jpg" alt="1행1열기사">
+                    </a>
+                </div>
+            </div>
+            <div class="row2"></div>
+            <div class="row3"></div>
+        </div><!--#section1끝-->
+        <div id="section2">
+            <ul>
+                <li>
+                    <a href="https://it.donga.com/107789/">“AI가 만드는 따뜻한 돌봄” 마크노바, HW·SW 통합 시니어 헬스케어 서비스 제공 [서울시립대학교 캠퍼스타운]</a>
+                </li>
+                <li>
+                    <a href="https://n.news.naver.com/mnews/article/022/0004079152?sid=101">치맥 결제는 누가?…“이재용 어린애” 젠슨황 농담에 李 “젊고 거만하죠” 응수</a>
+                </li>
+                <li>
+                    <a href="https://it.donga.com/107789/">“AI가 만드는 따뜻한 돌봄” 마크노바, HW·SW 통합 시니어 헬스케어 서비스 제공 [서울시립대학교 캠퍼스타운]</a>
+                </li>
+                <li>
+                    <a href="https://n.news.naver.com/mnews/article/022/0004079152?sid=101">치맥 결제는 누가?…“이재용 어린애” 젠슨황 농담에 李 “젊고 거만하죠” 응수</a>
+                </li>
+            </ul>
+        </div>
+        <div id="section3">
+            <ul>
+                <li>
+                    <p class="img"><img src="/ch07/100img.png"></p>
+                    <p class="txt">
+                        <span>첫번째 span은 말줄임을 할 예정입니다. block타입으로 전환하영야 말줄임 적용</span>
+                        <span>두번째 span은 말줄임 안 할 예정입니다. 그래서 inline 속성 그대로</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="img"><img src="/ch07/100img.png"></p>
+                    <p class="txt">
+                        <span>첫번째 span은 말줄임을 할 예정입니다. block타입으로 전환하영야 말줄임 적용</span>
+                        <span>두번째 span은 말줄임 안 할 예정입니다. 그래서 inline 속성 그대로</span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>
+            <img src="ch07/logo.png" alt="회사로고">
+        </p>
+        <p>서울시 XX구 XX동 XX빌딩 901호</p>
+    </footer>
 </body>
 </html>
