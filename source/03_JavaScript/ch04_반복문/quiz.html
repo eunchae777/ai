@@ -22,11 +22,11 @@
         let score = parseInt(input);
         // 3. 형변환된 숫자가 NaN여부 (isNaN함수 이용)
         if (isNaN(score) || score < 0 || score > 100) {
-            // 3-1 NaN이면 wrong ++
+        // 3-1 NaN이면 wrong ++
             wrong++;
             alert('0~100 사이의 숫자를 입력하세요!');
         } else {
-            // 3-2 NaN이 아니면 right++, sum에 입력한 숫자 누적
+        // 3-2 NaN이 아니면 right++, sum에 입력한 숫자 누적
             right++;
             sum += score;
         }

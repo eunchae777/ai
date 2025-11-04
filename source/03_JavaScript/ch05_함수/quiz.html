@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title></title>
+    <style>
+    body{
+        background:url(ch05_img/img03.png) no-repeat;
+        background-size: 100%;
+        color: white;
+        font-size: 1.5em;
+    }
+    </style>
+    <script>
+        //img01.png(노란글씨) img02.png(파란글씨) img03.png(하얀글씨)
+        let sec = 0;
+        let img = ['url(ch05_img/img03.png)','url(ch05_img/img01.png)','url(ch05_img/img02.png)'];
+        let color = ['white', 'yellow', 'blue'];
+
+        document.writeln(new Date().toLocaleString());
+        //document.body.innerHTML +=  '몇초 지남';
+        //document.body.style = 'background-image :' + img[0];
+        document.body.style.backgroundImage = img[0];
+        //글자색 바꾸기
+        //타이머 구동: sec증가, 백그라운드이미지수정, 글자색 수정, 시간과 몇초지났는지 출력
+        //10초 후 타이머 중지
+
+        let i = 0; 
+        let timer = setInterval(function() {
+            sec++; 
+            
+            document.body.style.backgroundImage = img[i];
+            document.body.style.color = color[i];
+            
+            document.body.innerHTML = new Date().toLocaleString() + "<br>" + sec + "초 지남";
+            // document.body.style.backgroundRepeat="no-repeat";
+            i++;
+            if (i >= img.length) i = 0;
+
+            if (sec === 10) {
+                clearInterval(timer);
+            }
+        }, 1000);
+    </script>
+
+</head>
+<body>
+</body>
+</html>

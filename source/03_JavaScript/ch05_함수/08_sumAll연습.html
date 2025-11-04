@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title></title>
+    <script src="sumAll.js"></script>
+    <script>
+        function sumAll(a, b, c, d, e) {
+    // 인자가 없으면 -999 반환
+    if (a === undefined) {
+        return -999;
+    }
+
+    // 인자가 하나라도 있으면 모두 더하기
+    let sum = 0;
+    if (a !== undefined) sum += a;
+    if (b !== undefined) sum += b;
+    if (c !== undefined) sum += c;
+    if (d !== undefined) sum += d;
+    if (e !== undefined) sum += e;
+
+    return sum;
+}
+        var sum = sumAll(); // -999 (매개변수가 없으면 -999를 리턴)
+        document.write('sumAll() = ' + sum + '<br>');
+        var sum = sumAll(1); // 1 (매개변수가 1개 이상이면 누적값리턴)
+        document.write('sumAll(1) = ' + sum + '<br>');
+        var sum = sumAll(1, 2, 3, 4, 5); // 15
+        document.write('sumAll(1, 2, 3, 4, 5) = ' + sum + '<br>');
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
