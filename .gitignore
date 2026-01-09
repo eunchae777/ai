@@ -4,5 +4,3 @@ downloads/
 IDE/
 lecNote/letNote/
 letNote/
-source/08_LLM/
-!source/08_LLM/**/*.ipynb
